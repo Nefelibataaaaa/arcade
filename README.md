@@ -99,6 +99,9 @@ npm install
 npm run dev
 ```
 
+> Until `@nefelibataaaaa/arcade-core` is published, run the app from the parent
+> workspace instead; the parent README has the publish steps.
+
 The dependency is declared in `package.json` as
 `"@nefelibataaaaa/arcade-core": "^1.1.0"`, so the app always installs the
 published package rather than a local link.
