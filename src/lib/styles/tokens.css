@@ -1,0 +1,106 @@
+/*
+ * Arcade design tokens.
+ * Every colour, type step, spacing step, radius, and motion value used by the
+ * app is declared here so the whole site shares one system.
+ */
+:root {
+	color-scheme: dark;
+
+	/* Colour ramp — dark arcade surfaces with gold and cyan accents. */
+	--bg-primary: #0f111a;
+	--bg-surface: #1a1d2d;
+	--bg-elevated: #252a40;
+	--bg-inset: #0a0c14;
+	--bg-glow: #1d2236;
+
+	--text-primary: #f3f4f8;
+	--text-secondary: #b8bdd0;
+	--text-muted: #9aa1bb;
+
+	--accent-primary: #ffbf00;
+	--accent-hover: #ffd659;
+	--accent-cyan: #4deeea;
+	--accent-cyan-quiet: #1f4f5a;
+	--success: #7bf1a8;
+	--danger: #ff8a8a;
+
+	--border-color: #363d5c;
+	--border-strong: #525b82;
+	--focus-ring: #4deeea;
+	--blocked-bg: #05060a;
+	--blocked-stripe: #181c2b;
+
+	/* 2048 tile ramp — one gold hue, 11 steps from light to deep.
+	   Every pair below is verified at >= 4.5:1 for the number on the tile. */
+	--tile-2-bg: #fff3d1;
+	--tile-2-fg: #2b1b00;
+	--tile-4-bg: #ffe7ae;
+	--tile-4-fg: #2b1b00;
+	--tile-8-bg: #ffdb8a;
+	--tile-8-fg: #2b1b00;
+	--tile-16-bg: #ffcd5c;
+	--tile-16-fg: #2b1b00;
+	--tile-32-bg: #f7b733;
+	--tile-32-fg: #2b1b00;
+	--tile-64-bg: #e49f12;
+	--tile-64-fg: #2b1b00;
+	--tile-128-bg: #c9850a;
+	--tile-128-fg: #2b1b00;
+	--tile-256-bg: #9c6100;
+	--tile-256-fg: #ffffff;
+	--tile-512-bg: #7e4d00;
+	--tile-512-fg: #ffffff;
+	--tile-1024-bg: #5f3a00;
+	--tile-1024-fg: #ffffff;
+	--tile-2048-bg: #422700;
+	--tile-2048-fg: #ffe9a8;
+	--tile-super-bg: #2a1700;
+	--tile-super-fg: #ffe9a8;
+
+	/* Type scale */
+	--font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	--font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+	--text-xs: 0.8125rem;
+	--text-sm: 0.9375rem;
+	--text-base: 1.0625rem;
+	--text-lg: 1.25rem;
+	--text-xl: 1.5rem;
+	--text-2xl: 2rem;
+	--text-3xl: clamp(2.5rem, 6vw, 3.5rem);
+	--leading-tight: 1.15;
+	--leading-snug: 1.35;
+	--leading-base: 1.65;
+
+	/* Spacing scale */
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.5rem;
+	--space-6: 2rem;
+	--space-7: 2.5rem;
+	--space-8: 3rem;
+	--space-9: 4rem;
+	--space-10: 5rem;
+
+	/* Radii, shadows, layout */
+	--radius-sm: 6px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--radius-pill: 999px;
+	--shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+	--shadow-md: 0 12px 30px rgb(0 0 0 / 35%);
+	--shadow-glow: 0 0 0 1px rgb(255 191 0 / 16%), 0 18px 40px rgb(0 0 0 / 40%);
+
+	--max-width: 68rem;
+	--reading-width: 65ch;
+	--page-gutter: clamp(1rem, 4vw, 2.5rem);
+	--touch-target: 44px;
+	--header-height: 4.5rem;
+
+	/* Motion */
+	--duration-fast: 120ms;
+	--duration-base: 200ms;
+	--duration-slow: 320ms;
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
