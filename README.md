@@ -78,6 +78,8 @@ src/
 
 ## Local development
 
+Node 20.19+ is required by Vite 7; Node 22 is recommended.
+
 The app is one half of a two-repository project. In this workspace, the sibling
 `arcade-core` package is linked through npm workspaces, so one install from the
 workspace root is enough:

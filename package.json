@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Cheney Gong's Arcade — a SvelteKit collection of browser games, including 2048.",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
