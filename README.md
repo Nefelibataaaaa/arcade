@@ -4,7 +4,7 @@ A SvelteKit arcade with a full **2048** game and a ported **6×6 mini crossword*
 from Project 1. The 2048 rules live in a separate, published npm package,
 [`@nefelibataaaaa/arcade-core`](https://www.npmjs.com/package/@nefelibataaaaa/arcade-core).
 
-Live site (after deployment): `https://nefelibataaaaa.github.io/arcade/`
+Live site: `https://nefelibataaaaa.github.io/arcade/`
 
 ## What is in the app
 
@@ -98,9 +98,6 @@ To run this repository by itself, the package must be installed from npm:
 npm install
 npm run dev
 ```
-
-> Until `@nefelibataaaaa/arcade-core` is published, run the app from the parent
-> workspace instead; the parent README has the publish steps.
 
 The dependency is declared in `package.json` as
 `"@nefelibataaaaa/arcade-core": "^1.1.0"`, so the app always installs the
