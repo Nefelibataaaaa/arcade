@@ -248,11 +248,14 @@ function readSavedGame() {
 		if (saved.spawnCount > MAX_SAVED_SPAWNS) return null;
 
 		const occupied = new Set();
+		const ids = new Set();
 		/** @type {Tile[]} */
 		const tiles = [];
 
 		for (const tile of saved.tiles) {
 			if (!Number.isInteger(tile?.id) || tile.id < 1) return null;
+			if (ids.has(tile.id)) return null;
+			ids.add(tile.id);
 			if (!Number.isInteger(tile?.value) || tile.value < 2) return null;
 			if ((tile.value & (tile.value - 1)) !== 0) return null;
 			if (!Number.isInteger(tile?.row) || tile.row < 0 || tile.row >= BOARD_SIZE) return null;
