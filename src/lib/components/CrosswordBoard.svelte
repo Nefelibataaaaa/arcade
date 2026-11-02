@@ -121,6 +121,7 @@
 					value={letters[cell.index] ?? ''}
 					data-cell={cell.index}
 					aria-label={cell.label}
+					onfocus={(event) => event.currentTarget.select()}
 					oninput={(event) => handleInput(event, cell.index)}
 					onkeydown={(event) => handleKeydown(event, cell)}
 				/>

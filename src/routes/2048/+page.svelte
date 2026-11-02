@@ -132,6 +132,7 @@
 				<ul>
 					<li>Arrow keys or W A S D move every tile in that direction.</li>
 					<li>Two equal tiles merge into their sum, once per move.</li>
+					<li>Each merge adds the new tile's value to your score.</li>
 					<li>A blocked move does not spawn a new tile.</li>
 					<li>Reaching 2048 wins the round — the board stays open for more.</li>
 					<li>The round ends when no tile can move or merge.</li>
